@@ -1,0 +1,74 @@
+git config
+Sets configuration values for your user name, email, gpg key, preferred diff algorithm, file formats and more. 
+
+git init
+Initializes a git repository – creates the initial .git directory in a new or in an existing project. Example:
+
+git init 
+Initialized empty Git repository in /home/username/GIT/.git/
+
+git clone
+Creates a GIT repository copy from a remote source. Also adds the original location as a remote so you can fetch 
+from it again and push to it if you have permissions.
+
+git clone
+ 
+git add
+Adds files changes in your working directory to your index. 
+
+git add .
+
+git rm
+Removes files from your index and your working directory so they will not be tracked. 
+
+git rm filename
+
+git commit
+Takes all of the changes written in the index, creates a new commit object pointing to it and sets the branch 
+to point to that new commit. 
+
+git commit -m ‘committing added changes’
+
+git commit -a -m ‘committing all changes, equals to git add and git commit’
+
+git status
+Shows you the status of files in the index versus the working directory. It will list out files that are 
+untracked (only in your working directory), modified (tracked but not yet updated in your index), 
+and staged (added to your index and ready for committing). 
+
+git status
+ 
+# On branch master #
+# Initial commit #
+# Untracked files: #
+# (use "git add <file>..." to include in what will be committed) #
+ 
+git branch -a * master remotes/origin/master
+
+git merge
+Merges one or more branches into your current branch and automatically creates a new commit if there are no conflicts.
+
+git reset
+Resets your index and working directory to the state of your last commit. 
+
+git pull
+Fetches the files from the remote repository and merges it with your local one. 
+
+git push
+Pushes all the modified local objects to the remote repository and advances its branches. Example:
+
+git remote
+Shows all the remote versions of your repository. 
+
+git log
+Shows a listing of commits on a branch including the corresponding details. 
+git log commit
+
+git diff
+
+git archive
+Creates a tar or zip file including the contents of a single tree from your repository.
+
+git fsck
+Does an integrity check of the Git file system, identifying corrupted objects. Example:
+
